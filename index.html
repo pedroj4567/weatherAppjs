@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comme:wght@200&display=swap" rel="stylesheet">
+
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter your location" id="search">
+            <button class="fa-solid fa-magnifying-glass" id="btn"></button>
+        </div>
+        <!-- Not found  -->
+        <div class="not-found">
+            <img src="./assets/images/404.svg">
+            <p>Oops! Invalid Location</p>
+        </div>
+
+       <!-- Weather info -->
+        <div class="weather-box">
+            <img src="" alt="">
+            <p id="temperature"></p>
+            <p id="description"></p>
+        </div>
+
+           <!-- Weather info details -->
+        <div class="weather-details">
+            <!-- Humidity -->
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span id="humiditySpan"></span>
+                    <p>humidity</p>
+                </div>
+            </div>
+            <!-- wind speed -->
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span id="windSpan"></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Script zone -->
+    <script src="https://kit.fontawesome.com/a9bea6f9a5.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
